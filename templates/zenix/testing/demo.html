@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    {% for elem in dz_array.global.css %}
+    <link href="{% static elem %}" rel="stylesheet">
+    {% endfor %}
+
+</head>
+<body>
+
+
+<h1 style="margin-bottom: 50px;"> Testing Page</h1>
+
+
+<pre>
+{{ dz_array|pprint }}
+</pre>
+
+
+
+
+
+
+</body>
+</html>
